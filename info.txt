@@ -1,0 +1,3 @@
+- select all the tests which you want to run and convert into testng that will create a suite file 
+- run the testng.xml suite to run all the test cases  
+- running a suite file which contains main.java class in it, and from that it is running all the tests..

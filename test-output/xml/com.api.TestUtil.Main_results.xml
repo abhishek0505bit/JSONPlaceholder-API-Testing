@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="10"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="37.120">
+  <properties />
+  
+  
+            <testcase name="tests" time="1.812" classname="com.api.TestUtil.Main" />
+                <testcase name="tests" time="1.314" classname="com.api.TestUtil.Main" />
+                <testcase name="tests" time="0.512" classname="com.api.TestUtil.Main" />
+                <testcase name="tests" time="1.090" classname="com.api.TestUtil.Main" />
+                <testcase name="tests" time="2.411" classname="com.api.TestUtil.Main" />
+                <testcase name="tests" time="1.276" classname="com.api.TestUtil.Main" />
+                <testcase name="tests" time="1.328" classname="com.api.TestUtil.Main" />
+                <testcase name="tests" time="1.261" classname="com.api.TestUtil.Main" />
+                <testcase name="tests" time="1.125" classname="com.api.TestUtil.Main" />
+                <testcase name="tests" time="1.117" classname="com.api.TestUtil.Main" />
+      
+</testsuite>

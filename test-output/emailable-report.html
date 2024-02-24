@@ -1,0 +1,781 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">19</td><td class="num">38,214</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="19">com.api.TestUtil.Main</td><td><a href="#m0">tests</a></td><td rowspan="19">1708750745337</td><td rowspan="19">1190</td></tr><tr class="failedeven"><td><a href="#m1">tests</a></td></tr><tr class="failedeven"><td><a href="#m2">tests</a></td></tr><tr class="failedeven"><td><a href="#m3">tests</a></td></tr><tr class="failedeven"><td><a href="#m4">tests</a></td></tr><tr class="failedeven"><td><a href="#m5">tests</a></td></tr><tr class="failedeven"><td><a href="#m6">tests</a></td></tr><tr class="failedeven"><td><a href="#m7">tests</a></td></tr><tr class="failedeven"><td><a href="#m8">tests</a></td></tr><tr class="failedeven"><td><a href="#m9">tests</a></td></tr><tr class="failedeven"><td><a href="#m10">tests</a></td></tr><tr class="failedeven"><td><a href="#m11">tests</a></td></tr><tr class="failedeven"><td><a href="#m12">tests</a></td></tr><tr class="failedeven"><td><a href="#m13">tests</a></td></tr><tr class="failedeven"><td><a href="#m14">tests</a></td></tr><tr class="failedeven"><td><a href="#m15">tests</a></td></tr><tr class="failedeven"><td><a href="#m16">tests</a></td></tr><tr class="failedeven"><td><a href="#m17">tests</a></td></tr><tr class="failedeven"><td><a href="#m18">tests</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">com.api.TestUtil.Main</td><td><a href="#m19">tests</a></td><td rowspan="10">1708750737803</td><td rowspan="10">1812</td></tr><tr class="passedeven"><td><a href="#m20">tests</a></td></tr><tr class="passedeven"><td><a href="#m21">tests</a></td></tr><tr class="passedeven"><td><a href="#m22">tests</a></td></tr><tr class="passedeven"><td><a href="#m23">tests</a></td></tr><tr class="passedeven"><td><a href="#m24">tests</a></td></tr><tr class="passedeven"><td><a href="#m25">tests</a></td></tr><tr class="passedeven"><td><a href="#m26">tests</a></td></tr><tr class="passedeven"><td><a href="#m27">tests</a></td></tr><tr class="passedeven"><td><a href="#m28">tests</a></td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts101, POST, NA, 405.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;405&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PostClass.postData(PostClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/abc, GET, NA, 400.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.GetClass.getData(GetClass.java:35)
+	at com.api.TestUtil.Main.tests(Main.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/comments?postId=1, PUT, , 405.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;405&gt; but was &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PutClass.putData(PutClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/1, POST, NA, 405.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;405&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PostClass.postData(PostClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/1/comments, GET, NA, 200.0, 2000.0, NA, keep-alive, {
+  &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+  &quot;type&quot;: &quot;array&quot;,
+  &quot;items&quot;: 
+    {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;postId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+        &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+        &quot;name&quot;: {&quot;type&quot;: &quot;string&quot;},
+        &quot;email&quot;: {&quot;type&quot;: &quot;string&quot;},
+        &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+      },
+      &quot;required&quot;: [&quot;postId&quot;,&quot;id&quot;,&quot;name&quot;,&quot;email&quot;,&quot;body&quot;],
+      &quot;additionalProperties&quot;: true
+    }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than &lt;2000L&gt; milliseconds, was 2358 milliseconds (2358 milliseconds).
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.GetClass.getData(GetClass.java:35)
+	at com.api.TestUtil.Main.tests(Main.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/1, PATCH, {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: &quot;aman@&quot;,
+    &quot;title&quot;:&quot;AMAN&quot;,
+    &quot;body&quot;: &quot;API Testing&quot;,
+    &quot;class&quot;:&quot;demo&quot;
+}, 400.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PatchClass.patchData(PatchClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/abc/comments, GET, NA, 400.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.GetClass.getData(GetClass.java:35)
+	at com.api.TestUtil.Main.tests(Main.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts101, PATCH, NA, 404.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PatchClass.patchData(PatchClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/1, POST, {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 1,
+    &quot;title&quot;: &quot;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&quot;,
+    &quot;body&quot;: &quot;quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto&quot;
+}, 405.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;405&gt; but was &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PostClass.postData(PostClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/abc, GET, NA, 400.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.GetClass.getData(GetClass.java:35)
+	at com.api.TestUtil.Main.tests(Main.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/1000/comments, PUT, NA, 405.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;405&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PutClass.putData(PutClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/1, POST, {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 1,
+    &quot;title&quot;: &quot;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&quot;,
+    &quot;body&quot;: &quot;quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto&quot;
+}, 405.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;405&gt; but was &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PostClass.postData(PostClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/comments?postId=abc, GET, NA, 400.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.GetClass.getData(GetClass.java:35)
+	at com.api.TestUtil.Main.tests(Main.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts, PUT, {
+    
+    &quot;title&quot;: &quot;api TEsting&quot;,
+    &quot;body&quot;: &quot;AMAN&quot;
+}, 405.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;405&gt; but was &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PutClass.putData(PutClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/1000/comments, GET, NA, 404.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.GetClass.getData(GetClass.java:35)
+	at com.api.TestUtil.Main.tests(Main.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts, PUT, NA, 405.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;405&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PutClass.putData(PutClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts, POST,  {
+    &quot;userId&quot;: &quot;AMAN&quot;,
+    &quot;title&quot;: &quot;POST 400 code expected&quot;,
+    &quot;body&quot;: &quot;API TESTING&quot;
+}, 400.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;201&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PostClass.postData(PostClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts, POST, {}, 204.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;204&gt; but was &lt;201&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PostClass.postData(PostClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/1, PUT, {
+    &quot;userId&quot;: &quot;111&quot;,
+    &quot;title&quot;:101,
+    &quot;body&quot;: &quot;Api Testing&quot;,
+    &quot;class&quot;: &quot;none&quot;
+}, 400.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.HttpMethod.PutClass.putData(PutClass.java:27)
+	at com.api.TestUtil.Main.tests(Main.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/1, DELETE, NA, 200.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/1, PATCH, {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 10,
+    &quot;title&quot;: &quot;Api Testing&quot;
+}, 200.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/comments?postId=1, GET, NA, 200.0, 2000.0, NA, keep-alive, {
+  &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+  &quot;type&quot;: &quot;array&quot;,
+  &quot;items&quot;: 
+    {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;postId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+        &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+        &quot;name&quot;: {&quot;type&quot;: &quot;string&quot;},
+        &quot;email&quot;: {&quot;type&quot;: &quot;string&quot;},
+        &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+      },
+      &quot;required&quot;: [&quot;postId&quot;,&quot;id&quot;,&quot;name&quot;,&quot;email&quot;,&quot;body&quot;],
+      &quot;additionalProperties&quot;: true
+    }
+}]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/1, GET, NA, 200.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts, GET, NA, 200.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;array&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts1, GET, NA, 404.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/@comments?postId=1, GET, , 404.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts/1, PUT, {
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 1,
+    &quot;title&quot;: &quot;Update the data into Server&quot;,
+    &quot;body&quot;: &quot;ApI testing&quot;
+}, 200.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts1, DELETE, NA, 404.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.api.TestUtil.Main#tests</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[/posts, POST, {
+    &quot;userId&quot;: 1,
+    &quot;title&quot;: &quot;Json Placeholder&quot;,
+    &quot;body&quot;: &quot;API TESTING&quot;
+    }, 201.0, 2000.0, NA, keep-alive, 
+{
+    &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;items&quot;:
+      {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;userId&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;id&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;title&quot;: { &quot;type&quot;: &quot;string&quot;},
+          &quot;body&quot;: {&quot;type&quot;: &quot;string&quot;}
+        },
+        &quot;required&quot;: [&quot;userId&quot;,&quot;id&quot;,&quot;title&quot;,&quot;body&quot;],
+        &quot;additionalProperties&quot;: true
+      }
+}]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
